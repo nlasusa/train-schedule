@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PENN BC TRAIN SCHEDULE</title>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+
+	<!-- JS JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+
+	<!-- Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	   
+</head>
+
+<body>
+<div class="container">
+	<div class="jumbotron text-center text-white">
+		<h1>Train Times</h1>
+	</div>
+
+	<!-- Current Train Schedule Table  -->
+
+	<div class="panel panel-success text-success">
+		<div class="panel-heading"><h3>Current Train Schedule</h3></div>
+		<div class="panel-body">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Train Name</th>
+						<th>Destination</th>
+						<th>Frequency(min)</th>
+						<th>Next Arrival</th>
+						<th>Minutes Away</th>
+					</tr>
+				</thead>
+
+				<!-- Train info goes here! -->
+				<tbody id="add-row">
+					</tbody>
+					
+				</table>
+			</div>
+			</div>
+
+		<div class="panel panel-success text-success">
+				<div class="panel-heading">
+					<h4>Add Train</h4>
+				</div>
+
+				<div class="panel-body">
+				<form>
+					<div class="form-group">
+						<label for="text">Train Name</label>
+						<input type="text" class="form-control" id="train-name">
+					</div>
+
+					<div class="form-group">
+						<label for="text">Destination</label>
+						<input type="text" class="form-control" id="destination">
+					</div>
+
+					<div class="form-group">
+						<label for="text">First Train Time (HH:mm - Military Time)</label>
+						<input type="text" class="form-control" id="first-train">
+					</div>
+
+					<div class="form-group">
+						<label for="text">Frequency (min)</label>
+						<input type="text" class="form-control" id="frequency">
+					</div>
+
+					<button type="submit" id="add-train" class="btn btn-success" id="addTrain">Submit</button>
+				</form><br>
+		</div>
+	</div>
+</div>
+
+<!-- Javascript -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+	
+</body>
+
+</html>

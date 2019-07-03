@@ -1,0 +1,51 @@
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+h1 {
+    font-size: 110px;
+    color: white;
+}
+
+.jumbotron {
+    background-color: #241464;
+    border: 5px solid #F01B22;
+}
+
+h3 {
+    color: #241464;
+    font-size: 30px;
+    background-color: #E9E3E1;
+    padding: 20px;
+}
+
+h4 {
+    color: #241464;
+    font-size: 30px;
+    background-color: #E9E3E1;
+    padding: 20px;
+}
+
+th {
+    color: #190202;
+    font-size: 20px;
+}
+
+.panel-body {
+    color: #190202;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #3F77E6;
+    border: none;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: lightblue; 
+}
+
+thead {
+    border: black; 
+}
